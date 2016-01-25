@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>WysiXML - Wysiwyg XML Editor</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+<div class="container-fluid">
+
+	<div class="row editor">
+		<div class="col-md-12">
+			<svg height="100%" width="100%"></svg>
+		</div>
+	</div>
+
+	<div class="overlay"></div>
+
+	<div class="row upload">
+		<div class="col-md-12">
+
+			<div class="row drop">
+				<h1>Drop an XML here</h1>
+
+				<div class="row hide">
+					<div class="col-md-4"><button type="button" class="btn btn-primary btn-lg">Browse</button></div>
+					<div class="col-md-4"><button type="button" class="btn btn-primary btn-lg">URL</button></div>
+					<div class="col-md-4"><button type="button" class="btn btn-primary btn-lg">Paste</button></div>
+				</div>
+			</div>
+			<div class="row paste hide">
+				<div class="col-md-12">
+					<h3>
+						paste container
+					</h3>
+				</div>
+			</div>
+			<div class="row url hide">
+				<div class="col-md-12">
+					<h3>
+						url container
+					</h3>
+				</div>
+			</div>
+			<div class="row progress hide">
+				<div class="col-md-12">
+					<h3>
+						progress container
+					</h3>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3>
+								progress description
+							</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="progress progress-striped">
+								<div class="progress-bar progress-success">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="js/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/application/factory/HandleFactory.js"></script>
+<script type="text/javascript" src="js/application/factory/EdgeFactory.js"></script>
+<script type="text/javascript" src="js/application/factory/NodeFactory.js"></script>
+<script type="text/javascript" src="js/application/model/base/Handle.js"></script>
+<script type="text/javascript" src="js/application/model/base/Edge.js"></script>
+<script type="text/javascript" src="js/application/model/base/Node.js"></script>
+<script type="text/javascript" src="js/application/model/base/Tree.js"></script>
+<script type="text/javascript" src="js/application/model/drawable/HandleUI.js"></script>
+<script type="text/javascript" src="js/application/model/drawable/EdgeUI.js"></script>
+<script type="text/javascript" src="js/application/model/drawable/NodeUI.js"></script>
+<script type="text/javascript" src="js/application/model/drawable/TreeUI.js"></script>
+<script type="text/javascript" src="js/application/parsing/XMLParser.js"></script>
+<script type="text/javascript" src="js/interface/events/CallbackDispatcher.js"></script>
+<script type="text/javascript" src="js/interface/panels/EditorPanel.js"></script>
+<script type="text/javascript" src="js/interface/panels/UploadPanel.js"></script>
+<script type="text/javascript" src="js/interface/rendering/HandleRenderer.js"></script>
+<script type="text/javascript" src="js/interface/rendering/EdgeRenderer.js"></script>
+<script type="text/javascript" src="js/interface/rendering/NodeRenderer.js"></script>
+<script type="text/javascript" src="js/interface/rendering/TreeRenderer.js"></script>
+<script type="text/javascript" src="js/interface/rendering/FacadeRendering.js"></script>
+<script type="text/javascript" src="js/Settings.js"></script>
+<script type="text/javascript" src="js/WysiXML.js"></script>
+</body>
+</html>
